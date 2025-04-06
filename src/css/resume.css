@@ -25,25 +25,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Main Container */
-.main-container {
-    min-height: 100vh;
-    width:100vw;
-    padding: 0px 20px;
-    margin: 0 auto;
-}
-
-/* Content Container */
-.content-container {
-   max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-
 /* Resume Container */
 .resume-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
 
@@ -78,7 +62,7 @@ body {
 
 .nav-item.active {
     color: #fff;
-    border-bottom: 2px solid #f59e0b;
+    border-bottom: 2px solid #9ca3af;
 }
 
 /* Resume Header */
@@ -90,26 +74,28 @@ body {
 .resume-header h1 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    color: white;
+
 }
 
 .header-underline {
     width: 3rem;
     height: 0.25rem;
-    background-color: #f59e0b;
+    background-color: #9ca3af;
 }
 
 /* Section Title */
 .section-title {
     display: flex;
     align-items: center;
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
 .icon {
-    color: #f59e0b;
+    color: #9ca3af;
     margin-right: 1rem;
 }
 
@@ -127,7 +113,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.education-item h3 {
+.education-item h2 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
@@ -173,7 +159,7 @@ body {
     .skills-items {
         grid-template-columns: 1fr 1fr;
     }
-}   
+}
 
 .skills-item {
     backdrop-filter: blur(10px);
@@ -283,4 +269,63 @@ body {
 .social-link:hover {
     color: #f59e0b;
     transition: color 0.3s ease;
+}
+
+
+/* footer section */
+
+.footer {
+    text-align: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.429);
+    padding: 2em 20px;
+    max-width: 1200px;
+    margin: 1em auto;
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    color: #9ca3af;
+}
+
+
+.footer p {
+    margin-top: 1em;
+    color: #4b5563;
+}
+
+
+/* smother scrolling */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.effect-scorlling {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }

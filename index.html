@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
 
     <div id="#root" class="page-container">
         <!-- nav bar -->
@@ -37,7 +40,7 @@
 
         <!-- hero section -->
 
-        <section class="hero-section">
+        <section class="hero-section ">
             <div class="left-section">
                 <div class="welcome-text">
                     <div class="un-dot"></div>
@@ -55,10 +58,11 @@
                     explicabo. Tenetur quasi nihil alias quo, doloremque quas sint, ab quaerat harum, dolore nobis! Unde
                     illo maxime autem eos aperiam tempore adipisci quod inventore..</p>
                 <div class="btn-box">
-                    <a href="#">Hire Me</a>
+                    <a id="hireBtn" href="#">Hire Me</a>
                     <a href="/src/page/resume.html">Resume</a>
                 </div>
             </div>
+
 
             <div class="code-section">
                 <div class="editor">
@@ -75,9 +79,9 @@
         <span class="property">name</span>: <span class="string">'Ashish'</span>,
         <span class="property">title</span>: <span class="string">'Lorem ipsum dolor sit.| lorem'</span>,
         <span class="property">skills</span>: [ 
-        <span class="string">'Html'</span>, <span class="string">'Css'</span>, <span class="string">'Javascript'</span>, <span class="string">'Tailwind CSS'</span>,
-            <span class="string">'Bootstrap'</span>, <span class="string">'Ps Photoshop'</span>, <span class="string">'Ai'</span>, <span class="string">'Figma'</span>, 
-            <span class="string">'Canva'</span>, <span class="string">'Git & Github'</span>, <span class="string">''</span>, <span class="string">'Discord Development'</span>
+        <span class="string">'Html'</span>, <span class="string">'Css'</span>, <span class="string">'Tailwind Css'</span>, <span class="string">'Bootstrap'</span>,
+            <span class="string">'Figma'</span>, <span class="string">'Ps Photoshop'</span>, <span class="string">'Canva'</span>, <span class="string">'Adobe XD'</span>, 
+            <span class="string">'Framer'</span>, <span class="string">'Git & Github'</span>, <span class="string">'Vs Code'</span>,
         
         ],
         <span class="property">hardWorker</span>: <span class="boolean">true</span>,
@@ -89,7 +93,7 @@
                 <span class="this">this</span>.hardWorker &&
                 <span class="this">this</span>.problemSolver &&
                 <span class="this">this</span>.skills.length >= <span class="number">5</span> &&
-                <span class="this">this</span>.yearsOfExperience >= <span class="number">3</span>);}};</code></pre>
+                );}};</code></pre>
                     </div>
                 </div>
         </section>
@@ -98,10 +102,10 @@
         <section class="about-section">
             <h1>About Me</h1>
             <div class="about-container">
-                <div class="about-image">
+                <div class="about-image effect-scorlling">
                     <img src="/assets/img/new images.jpg" alt="">
                 </div>
-                <div class="about-content">
+                <div class="about-content effect-scorlling">
                     <p>Hi, I'm <span class="hight-light"> <strong> Ashish </strong></span>, a web developer and UI/UX
                         designer in the making. I'm currently a
                         student, diving deep into the world of coding, design, and technology — the things that truly
@@ -137,10 +141,11 @@
 
     <!-- projects section -->
     <div class="experience-section">
-        <h1>Experience</h1>
+        <h1>Projects</h1>
 
         <div class="experience-list">
-            <div class="experience-item">
+            <!-- frist -->
+            <div class="experience-item effect-scorlling">
                 <div class="date">
                     <img src="/assets/img/exp1.jpg" alt="">
                 </div>
@@ -160,8 +165,8 @@
                 </div>
             </div>
 
-            <!-- Second Item -->
-            <div class="experience-item">
+            <!-- Second  -->
+            <div class="experience-item effect-scorlling">
                 <div class="date">
                     <img src="/assets/img/exp2.jpg" alt="">
                 </div>
@@ -181,8 +186,8 @@
                 </div>
             </div>
 
-            <!-- Second Experience Item -->
-            <div class="experience-item">
+            <!-- thrd  -->
+            <div class="experience-item effect-scorlling">
                 <div class="date">
                     <img src="/assets/img/exp4.jpg" alt="">
                 </div>
@@ -203,6 +208,111 @@
             </div>
         </div>
     </div>
+    <!-- blog section -->
+
+
+    <div class="experience-section">
+        <h1>Thought</h1>
+
+        <div class="experience-list">
+            <!-- frist -->
+            <div class="experience-item effect-scorlling">
+                <div class="date">2025</div>
+                <div class="details">
+                    <h2>Senior Full Stack Developer - <span>Google Inc.</span></h2>
+                    <p class="description">
+                        Led a team in developing and maintaining web applications using JavaScript, React.js, and
+                        Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with
+                        stakeholders to define project requirements and timelines.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">mongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second  -->
+            <div class="experience-item effect-scorlling">
+                <div class="date">2025</div>
+                <div class="details">
+                    <h2>Frontend Developer - <span>Adobe</span></h2>
+                    <p class="description">
+                        Designed and developed user interfaces for web applications using Next.js and React. Worked
+                        closely with backend developers to integrate frontend components with Node.js APIs. Implemented
+                        responsive designs and optimized frontend performance.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">mySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- thrd  -->
+            <div class="experience-item effect-scorlling">
+                <div class="date">2025 </div>
+                <div class="details">
+                    <h2>Frontend Developer - <span>Adobe</span></h2>
+                    <p class="description">
+                        Designed and developed user interfaces for web applications using Next.js and React. Worked
+                        closely with backend developers to integrate frontend components with Node.js APIs. Implemented
+                        responsive designs and optimized frontend performance.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">mySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cotect -->
+
+    <div class="container effect-scorlling">
+        <h1>Contact</h1>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Name *" required>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="E-mail address *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            </div>
+          </div>
+  
+          <div class="form-title">
+            <h2>What are your needs?</h2>
+          </div>
+  
+          <div class="options-group">
+            <button type="button" class="option-button">Advice</button>
+            <button type="button" class="option-button">Web development</button>
+            <button type="button" class="option-button">Maintenance</button>
+          </div>
+  
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message *" required></textarea>
+          </div>
+  
+          <button type="submit" class="submit-button">Send me your sweet words</button>
+        </form>
+      </div>
+
+
+    <!-- blog end -->
 
     <!-- footer section -->
     <footer class="footer">
@@ -218,6 +328,6 @@
 
 
 </body>
-<script src="./script.js"></script>
+<script src="/src/js/main.js"></script>
 
 </html>
