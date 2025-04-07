@@ -8,55 +8,62 @@
 }
 
 /* Main cursor dot */
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
+
+
+.cursor-wrapper.hovering .cursor-glow {
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    filter: blur(10px);
+  }
+  
+  .cursor-wrapper.hovering .cursor-dot {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
+.cursor-wrapper {
     position: fixed;
     pointer-events: none;
     z-index: 9999;
-    transition: width 0.2s, height 0.2s, transform 0.1s;
-    transform: translate(-50%, -50%);
   }
   
-  .cursor-dot-expanded {
-    width: 24px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0.5);
-    mix-blend-mode: difference;
-  }
-  
-  /* Glow effect */
-  .cursor-glow {
-    width: 40px;
-    height: 40px;
-    background: radial-gradient(
-      circle,
-      rgba(139, 92, 246, 0.3) 0%,
-      rgba(139, 92, 246, 0.1) 50%,
-      transparent 70%
-    );
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(236, 245, 255); /* Dot color */
     border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, opacity 0.3s;
-    animation: pulse 2s infinite;
   }
   
-  @keyframes pulse {
-    0% {
+  .cursor-glow {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 126, 139);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    filter: blur(8px);
+    opacity: 0.4;
+    animation: glowPulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes glowPulse {
+    0%, 100% {
+      opacity: 0.4;
       transform: translate(-50%, -50%) scale(1);
     }
     50% {
+      opacity: 0.6;
       transform: translate(-50%, -50%) scale(1.2);
     }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-    }
   }
+  
+  
 
 html {
     scroll-behavior: smooth;
